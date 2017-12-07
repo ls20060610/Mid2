@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-
+/*
     Button b_b1 = (Button) findViewById(R.id.b_b1);
     Button b_b2 = (Button) findViewById(R.id.b_b2);
     Button b_b3 = (Button) findViewById(R.id.b_b3);
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button b_b6 = (Button) findViewById(R.id.b_b6);
     Button b_b7 = (Button) findViewById(R.id.b_b7);
     Button b_b8 = (Button) findViewById(R.id.b_b8);
-
+*/
     public void b_b1(View view){
         Intent intent = new Intent(this , Func1Activity.class);
         startActivity(intent);
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void b_b3(View view){
         Intent intent = new Intent(this , Func3Activity.class);
-        startActivity(intent);
+        startActivityForResult(intent , REQUEST_CODE);
 
     }
     @Override
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void b_b4(View view){
         Intent intent = new Intent(this , Func4Activity.class);
-        startActivityForResult(intent,REQUEST_CODE);
+        startActivity(intent);
     }
     public void b_b5(View view){
         Intent intent = new Intent(this , Func5Activity.class);
